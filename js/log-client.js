@@ -1,21 +1,19 @@
 var BatteryLogger = require('./battery-logger.js');
 var Util = require('./util.js');
 
-var analyticsService = analytics.getService('shout_out');
-tracker = analyticsService.getTracker('UA-35315454-5');
-
 // Maximum lifespan of the client ID is 63 days. Use 60 days just to be safe.
 var CLIENT_ID_LIFE_MS = (1000 * 60 * 60 * 24) * 60;
 
 /**
- * Google Analytics logging functionality.
+ * Local logging functionality.
  *
- * Depends on google-analytics-bundle.js, included in manifest.json.
+ * Replaces Google Analytics usage. Logs are stored locally and optionally
+ * forwarded to a configurable HTTP endpoint (chrome.storage.local 'logServerUrl').
  */
 function Log(params) {
   params = params || {};
-  this.onlyAnalytics = !!params.onlyAnalytics;
-  this.LOG_URL = 'http://shout-out-server.appspot.com/log';
+  this.onlyAnalytics = !!params.onlyAnalytics; // keep flag for compatibility
+  this.LOG_URL = null; // optional remote log server
   this.batteryLogger = new BatteryLogger();
 
   this.clientId = null;
@@ -24,7 +22,12 @@ function Log(params) {
   // Test group for this type of user. Can be reset externally.
   this.testGroup = 'default';
 
-  this.setupAnalyticsListener();
+  // load optional remote log URL
+  chrome.storage.local.get(['logServerUrl'], function(result) {
+    if (result && result.logServerUrl) {
+      this.LOG_URL = result.logServerUrl;
+    }
+  }.bind(this));
 }
 
 Log.prototype.logInstalled = function() {
@@ -114,8 +117,6 @@ Log.prototype.logError = function(reason, opt_extra) {
     version: version,
     reason: reason
   });
-  var extra = opt_extra || version;
-  this.sendEvent('Error', reason, extra);
   Util.log('Error:', reason);
 };
 
@@ -127,8 +128,10 @@ Log.prototype.logData_ = function(eventType, fields) {
   if (this.onlyAnalytics) {
     return;
   }
+
   var data = {
-    type: eventType
+    type: eventType,
+    client_time: new Date().valueOf()
   };
 
   // Set fields
@@ -138,18 +141,33 @@ Log.prototype.logData_ = function(eventType, fields) {
     }
   }
 
-  // Make a request to the logging server.
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', this.LOG_URL, true);
+  // Save locally (append to an array in storage for simple inspection/debugging)
+  chrome.storage.local.get(['_localLogs'], function(result) {
+    var logs = (result && result._localLogs) ? result._localLogs : [];
+    logs.push(data);
+    // Keep last 500 logs only
+    if (logs.length > 500) logs = logs.slice(logs.length - 500);
+    chrome.storage.local.set({'_localLogs': logs});
+  });
 
-  xhr.onload = function(e) {
-    if (xhr.status == 200) {
-      this.onLogSuccess_(xhr.responseText);
-    } else {
-      this.onLogError_(xhr.responseText);
+  // Optionally forward to remote logging server
+  if (this.LOG_URL) {
+    try {
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', this.LOG_URL, true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.onload = function(e) {
+        if (xhr.status == 200) {
+          this.onLogSuccess_(xhr.responseText);
+        } else {
+          this.onLogError_(xhr.responseText);
+        }
+      }.bind(this);
+      xhr.send(JSON.stringify(data));
+    } catch (e) {
+      console.error('Failed to forward log', e);
     }
-  }.bind(this);
-  xhr.send(JSON.stringify(data));
+  }
 };
 
 Log.prototype.getOrCreateClientId_ = function() {
@@ -197,40 +215,22 @@ Log.prototype.setTestGroup = function(testGroup) {
 };
 
 Log.prototype.sendEvent = function(category, action, label) {
-  var event = analytics.EventBuilder.builder()
-      .category(category)
-      .action(action)
-      .label(label)
-      .dimension(1, this.clientId)
-      .dimension(2, this.getVersion_())
-      .dimension(3, this.testGroup);
+  // Keep behavior: record event in local logs and optionally forward.
+  var data = {
+    category: category,
+    action: action,
+    label: label,
+    client_id: this.clientId,
+    version: this.getVersion_(),
+    test_group: this.testGroup
+  };
 
   if (this.batteryLogger.isReadyToReport()) {
-    event = event.metric(1, this.batteryLogger.getDischargeRate())
-        .metric(2, 1);
-    // Take a snapshot of the current battery state.
+    data.battery_discharge = this.batteryLogger.getDischargeRate();
     this.batteryLogger.snapshot();
   }
 
-  tracker.send(event);
-};
-
-/**
- * Adds a filter that captures hits being sent to Google Analytics.
- */
-Log.prototype.setupAnalyticsListener = function() {
-  var filter = analytics.filters.FilterBuilder.builder()
-      .whenHitType(analytics.HitTypes.EVENT)
-      .applyFilter(this.onAnalyticsEvent.bind(this));
-  // Listen to all hits to the analytics server.
-  tracker.addFilter(filter.build());
-}
-
-Log.prototype.onAnalyticsEvent = function(hit) {
-  var params = hit.getParameters();
-  var category = params.get(analytics.Parameters.EVENT_CATEGORY);
-  var action = params.get(analytics.Parameters.EVENT_ACTION);
-  Util.log('Sent to analytics', category, action);
+  this.logData_('event', data);
 };
 
 module.exports = Log;

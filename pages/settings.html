@@ -57,8 +57,24 @@
 		</section>
 
 		<script src="js/jquery.1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/common.js"></script>
+		<script src="js/settings.js"></script>
+		<script src="js/common.js"></script>
+
+		<section>
+			<h3>Profile</h3>
+			<label for="profile_name">Display name</label>
+			<input id="profile_name" type="text" />
+			<label for="profile_picture">Avatar URL (optional)</label>
+			<input id="profile_picture" type="text" />
+			<button id="save_profile">Save profile</button>
+
+			<h3>Advanced (optional)</h3>
+			<label for="signaling_url">Signaling server WebSocket URL</label>
+			<input id="signaling_url" type="text" placeholder="ws://localhost:8080" />
+			<label for="log_server_url">Remote log server URL (optional)</label>
+			<input id="log_server_url" type="text" placeholder="http://example.com/log" />
+			<button id="save_servers">Save servers</button>
+		</section>
 
 	</body>
 </html>
