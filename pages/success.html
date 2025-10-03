@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title data-i18n="name"></title>
+		<link href="css/shoutout.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+    <div class="msgbar closed">
+      <div class="container">
+        <button type="button" id="close">&times;</button>
+        <div data-i18n="invite_others"></div>
+      </div>
+    </div>
+
+		<section id="wrapper" class="wrapper">
+
+			<header>
+				<img src="img/shoutout.svg" width="50px" height="50px"/>&nbsp;&nbsp;
+				<h2 data-i18n="name"></h2>
+			</header>
+
+			<article id="intro">
+				<h1 data-i18n="success_title"></h1>
+				<hr/>
+				<p data-i18n="success_call"></p>
+			</article>
+
+			<article id="anim">
+				<canvas id="canvas" width="600" height="460"></canvas>
+			</article>
+
+      <div data-i18n-import="fragment_info.html"></div>
+
+			<footer>
+				<ul>
+					<li><a href="#" id="bug" data-i18n="report_bug"></a></li>
+				</ul>
+			</footer>
+
+		</section>
+
+		<script src="js/easeljs-0.7.1.min.js"></script>
+		<script src="js/tweenjs-0.5.1.min.js"></script>
+		<script src="js/movieclip-0.7.1.min.js"></script>
+		<script src="js/shoutout_illustration.js"></script>
+    <script src="js/common.js"></script>
+		<script src="js/success.js"></script>
+
+	</body>
+</html>

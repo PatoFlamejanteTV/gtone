@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Saate mis tahes URL-i edastada kuuldeulatuses olevatesse arvutitesse.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Selle URL-i edastamine",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL kasutajalt {{username}}.",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Klõpsake üksuse „{{title}}” avamiseks domeenil {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Klõpsake funktsiooni Tone proovimiseks.",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone ei kuulnud ennast",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Kontrollige helitugevust ja proovige uuesti.\nKlõpsake lisateabe saamiseks.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL-i ei saadetud",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Näib, et te pole võrguga ühendatud.\nKlõpsake lisateabe saamiseks.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Keela Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Luba Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone ei kuulnud seda.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Enne kui uuesti proovite:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "suurendage helitugevust;",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "eemaldage kõrvaklapid.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Teavitage meid veast",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Kahjuks see ei toiminud.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Veenduge, et teie arvuti oleks võrguga ühendatud.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Proovige Google Tone'i kohe.",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Kuuldeulatuses olevatesse arvutitesse URL-i edastamiseks vajutage nuppu {{action_image}}.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Kutsuge teisi Google Tone'i kasutama: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Seaded",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "SEES",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "VÄLJAS",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone on sisse lülitatud",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone on välja lülitatud",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Saate URL-e saata ja vastu võtta.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Te ei saa URL-e saata ega vastu võtta.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone töötas.",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Liikuge teisele lehele ja klõpsake selle edastamiseks nupul {{action_image}}.",
+    "description": "Call to action of success.html."
+  }
+}

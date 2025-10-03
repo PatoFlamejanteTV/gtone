@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "দূরত্বের মধ্যে থাকা কম্পিউটারে যে কোনো URL সম্প্রচার করুন।",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "এই URL টি সম্প্রচার করুন",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "{{username}} থেকে URL!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "{{domain}} থেকে '{{title}}' খুলতে ক্লিক করুন",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Tone ব্যবহারের জন্য ক্লিক করুন!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone স্বয়ং শোনা যায় না",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "আপনার ভলিউম চেক করুন এবং আবার চেষ্টা করুন। আরো তথ্যের জন্য ক্লিক করুন।",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL প্রেরিত হয় নি",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "আপনাকে দেখে আপনি অফলাইনে আছেন বলে মনে হচ্ছে।\nআরো তথ্যের জন্য ক্লিক করুন।",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Tone অক্ষম করুন",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Tone সক্ষম করুন",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone-এ এটি শুনতে পাবেন না।",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "আপনি আবার চেষ্টা করার আগে:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "আপনার ভলিউম চালু করুন।",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "আপনার হেডফোন আনপ্লাগ করুন।",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "একটি বাগ রিপোর্ট করুন",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "দুর্ভাগ্যবশত, এটি কাজ করে নি।",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "আপনার কম্পিউটার অনলাইনে আছে তা নিশ্চিত করুন।",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "এখনই Google Tone ব্যবহার করে দেখুন!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "দূরত্বের মধ্যে শোনার জন্য কম্পিউটারে একটি URL সম্প্রচার করতে {{action_image}} বোতামটি টিপুন।",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "অন্যদেরকে Google Tone ব্যবহারের জন্য আমন্ত্রণ জানান: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "সেটিংস",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "চালু",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "বন্ধ",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone চালু আছে",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone বন্ধ আছে",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "আপনি URL গুলি পাঠাতে এবং গ্রহণ করতে পারবেন।",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "আপনি URL গুলি পাঠাতে বা গ্রহণ করতে পারবেন না।",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone কাজ করছে!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "অন্য পৃষ্ঠাতে নেভিগেট করুন এবং এটিকে সম্প্রচার করতে {{action_image}} বোতামটি টিপুন।",
+    "description": "Call to action of success.html."
+  }
+}

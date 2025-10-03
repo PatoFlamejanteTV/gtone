@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Siarkan mana-mana URL ke komputer yang berada dalam jarak pendengaran.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Siarkan URL ini",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL daripada {{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Klik untuk membuka '{{title}}' daripada {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Klik untuk mencuba Tone!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone tidak dapat mendengar",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Semak kelantangan anda dan cuba lagi.\nKlik untuk mendapatkan maklumat lanjut.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL tidak dihantar",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Anda kelihatan berada di luar talian.\nKlik untuk mendapatkan maklumat lanjut.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Lumpuhkan Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Dayakan Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone tidak dapat mendengarnya.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Sebelum anda mencuba lagi:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Tinggikan kelantangan anda.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Cabut fon kepala anda.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Laporkan pepijat",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Malangnya, cara itu tidak berkesan.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Pastikan komputer anda berada dalam talian.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Cuba Google Tone sekarang!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Tekan butang {{action_image}} untuk menyiarkan URL ke komputer yang berada dalam jarak pendengaran.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Jemput orang lain untuk menggunakan Google Tone: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Tetapan",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "HIDUP",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "MATI",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone hidup",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone mati",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Anda boleh menghantar dan menerima URL.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Anda tidak boleh menghantar atau menerima URL.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone berfungsi!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Navigasi ke halaman lain dan klik butang {{action_image}} untuk menyiarkannya.",
+    "description": "Call to action of success.html."
+  }
+}

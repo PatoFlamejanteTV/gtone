@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "გადაეცით ნებისმიერი URL, სმენადობის დიაპაზონში მყოფ კომპიუტერებზე.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "ამ URL-ის გადაცემა",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL მომხმარებლისგან: {{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "დააწკაპუნეთ, რომ გახსნათ „{{title}}“ {{domain}}-დან",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "დააწკაპუნეთ Tone-ის გამოსაცდელად!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone-ს საკუთარი სიგნალი არ ესმის",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "შეამოწმეთ ხმის სიძლიერე და სცადეთ ხელახლა.\nდააწკაპუნეთ დამატებითი ინფორმაციისთვის.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL არ გაიგზავნა",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "როგორც ჩანს, ხაზგარეშე რეჟიმში ხართ.\nდააწკაპუნეთ დამატებითი ინფორმაციისთვის.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Tone-ის გათიშვა",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Tone-ის ჩართვა",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone-მა ეს ვერ გაიგონა.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "ხელახლა ცდამდე:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "აუწიეთ ხმას.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "გამოაერთეთ ყურსასმენები.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "შეცდომის შესახებ შეტყობინება",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "სამწუხაროდ, ამან არ იმუშავა.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "დარწმუნდით, რომ კომპიუტერი ონლაინ რეჟიმშია.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "გამოცადეთ Google Tone ახლავე!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "სმენადობის დიაპაზონში მყოფ კომპიუტერებზე URL-ის გადასაცემად, დააჭირეთ ღილაკს {{action_image}}.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "მოიწვიეთ სხვები Google Tone-ის გამოსაყენებლად: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "პარამეტრები",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ჩართული",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "გამორთული",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone ჩართულია",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone გამორთულია",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "შეგიძლიათ URL-ების მიღება და გაგზავნა.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "URL-ების მიღება და გაგზავნა არ შეგიძლიათ.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone-მა იმუშავა!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "მის გადასაცემად, გადადით სხვა გვერდზე და დააწკაპუნეთ ღილაკზე {{action_image}}.",
+    "description": "Call to action of success.html."
+  }
+}

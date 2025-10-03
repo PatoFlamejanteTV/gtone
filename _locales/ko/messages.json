@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "소리를 인식할 수 있을 만한 거리에 있는 컴퓨터에 URL을 브로드캐스트합니다.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "이 URL 브로드캐스트",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "{{사용자 이름}}님이 보낸 URL",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "클릭하여 {{도메인}}에서 '{{제목}}'을(를) 열기",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Tone을 사용해 보려면 클릭하세요.",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone에서 소리를 인식할 수 없음",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "볼륨을 확인하고 다시 시도해 주세요.\n자세히 알아보려면 클릭하세요.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL이 전송되지 않음",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "오프라인 상태인 것 같습니다.\n자세히 알아보려면 클릭하세요.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Tone 사용 중지",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Tone 사용",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone이 소리를 인식하지 못했습니다.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "다시 시도하기 전에 다음을 따르세요.",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "볼륨을 높입니다.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "헤드폰이 꽂혀 있는 경우 뽑습니다.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "버그 신고",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "오류가 발생했습니다.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "컴퓨터가 온라인 상태인지 확인하세요.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "지금 Google Tone을 사용해 보세요.",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "소리를 인식할 수 있을 만한 거리에 있는 컴퓨터에 URL을 브로드캐스트하려면 {{action_image}} 버튼을 누릅니다.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "다른 사용자를 Google Tone으로 초대하기: {{짧은 링크}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "설정",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "켜짐",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "꺼짐",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone 켜짐",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone 꺼짐",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "URL을 전송하고 수신할 수 있습니다.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "URL을 전송하거나 수신할 수 없습니다.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone 작동 성공",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "다른 페이지로 이동한 다음 {{action_image}} 버튼을 클릭하여 브로드캐스트합니다.\n",
+    "description": "Call to action of success.html."
+  }
+}

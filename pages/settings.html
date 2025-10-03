@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title data-i18n="name"></title>
+		<link href="css/shoutout.css" rel="stylesheet" type="text/css">
+    <style>
+#disable-instructions { display: none; }
+    </style>
+	</head>
+	<body>
+
+    <div class="msgbar closed">
+      <div class="container">
+        <button type="button" id="close">&times;</button>
+        <div data-i18n="invite_others"></div>
+      </div>
+    </div>
+
+		<section id="wrapper" class="wrapper">
+
+			<header>
+				<img src="img/shoutout.svg" width="50px" height="50px"/>&nbsp;&nbsp;
+				<h2 data-i18n="name"></h2>
+			</header>
+
+			<article id="settings">
+				<h2 data-i18n="settings_title"></h2>
+				<div class="slideToggle" id="stoggle" tabindex="0">
+					<div class="slidetoggle on">
+						<span class="on" data-i18n="settings_on"></span>
+						<span class="off" data-i18n="settings_off"></span>
+						<span class="thumb"></span>
+					</div>
+				</div>
+				<label for="stoggle">
+          <div class="active">
+            <div data-i18n="settings_on_title"></div>
+            <span data-i18n="settings_on_subtitle"></span>
+          </div>
+          <div class="inactive">
+            <div data-i18n="settings_off_title"></div>
+            <span data-i18n="settings_off_subtitle"></span>
+          </div>
+        </label>
+
+			</article>
+
+      <div data-i18n-import="fragment_info.html"></div>
+
+			<footer>
+				<ul>
+					<li><a href="#" id="bug" data-i18n="report_bug"></a></li>
+				</ul>
+			</footer>
+
+		</section>
+
+		<script src="js/jquery.1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/common.js"></script>
+
+	</body>
+</html>

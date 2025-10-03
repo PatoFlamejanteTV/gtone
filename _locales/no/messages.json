@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Send en hvilken som helst nettadresse til datamaskiner innenfor hørevidde.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Send denne nettadressen",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "Nettadresse fra {{username}}",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Klikk for å åpne «{{title}}» fra {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Klikk for å prøve Tone",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Google Tone kunne ikke høre seg selv",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Sjekk volumet og prøv igjen.\nKlikk for mer informasjon.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "Nettadressen ble ikke sendt",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Det ser ut til at du ikke er koblet til Internett.\nKlikk for mer informasjon.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Slå av Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Slå på Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone hørte ikke det.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Før du prøver igjen:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Øk volumet.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Koble fra hodetelefonene.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Rapportér en feil",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Det fungerte dessverre ikke.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Sjekk at datamaskinen er koblet til Internett.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Prøv Google Tone nå",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Trykk på {{action_image}} for å sende en nettadresse til datamaskiner innenfor hørevidde.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Inviter andre brukere til å bruke Google Tone: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Innstillinger",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "PÅ",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "AV",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone er på",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone er av",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Du kan sende og motta nettadresser.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Du kan ikke sende eller motta nettadresser.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone fungerte.",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Gå til en annen side, og klikk på {{action_image}} for å sende den.",
+    "description": "Call to action of success.html."
+  }
+}

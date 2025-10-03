@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "ကြားနိုင်လောက်သော အကွာအဝေးတွင်းရှိ ကွန်ပျူတာများသို့ URL များ ထုတ်လွှင့်သည်။",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "ဤ URL အားထုတ်လွှင့်ရန်",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "{{username}} မှ URL!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "'{{title}}' အား {{domain}} မှနေ၍ ဖွင့်ရန် ကလစ်နှိပ်ပါ",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Tone အားစမ်းကြည့်ရန် ကလစ်နှိပ်ပါ!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone သည် ၎င်း၏အသံအား ပြန်မကြားနိုင်ပါ",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "အသံအတိုးအကျယ် စစ်ဆေးပြီး ထပ်မံကြိုးစားပါ။\nနောက်ထပ် အချက်အလက်များအတွက် ကလစ်နှိပ်ပါ။",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL မပို့ရသေးပါ",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "သင် အော့ဖ်လိုင်း ဖြစ်နေပုံရ၏။\nနောက်ထပ် အချက်အလက်များအတွက် ကလစ်နှိပ်ပါ။",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Tone အားပိတ်ရန်",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Tone အားဖွင့်ရန်",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "၎င်းအား Google Tone မကြားနိုင်ပါ။",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "သင် ထပ်မံမကြိုးစားမီ-",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "သင့် အသံအတိုးအကျယ်အား မြှင့်ရန်။",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "သင့် နားကြပ်အား ဖြုတ်ရန်။",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "ချို့ယွင်းချက်အား သတင်းပို့ရန်",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "ကံမကောင်းစွာပင်၊ ၎င်းအလုပ်မလုပ်ပါ။",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "သင့်ကွန်ပျူတာ အွန်လိုင်းရှိနေကြောင်း သေချာပါစေ။",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Google Tone အား ယခု စမ်းကြည့်ပါ!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "ကြားနိုင်လောက်သော အကွာအဝေး အတွင်းရှိ ကွန်ပျူတာများသို့ URL တစ်ခု ထုတ်လွှင့်နိုင်ရန် {{action_image}} ခလုတ်အား နှိပ်ပါ။",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "အခြားသူများ Google Tone သုံးနိုင်ရန် ဖိတ်ကြားပါ- {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "ဆက်တင်များ",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ဖွင့်ရန်",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "ပိတ်ရန်",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone ဖွင့်ထား၏",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone ပိတ်ထား၏",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "သင် URL များ ပို့နိုင် လက်ခံနိုင်သည်။",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "သင် URL များ ပို့နိုင် လက်ခံနိုင်ခြင်း မရှိပါ။",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone အလုပ်လုပ်သည်!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "အခြားစာမျက်နှာသို့ သွားရောက်လေ့လာပြီး ၎င်းအား ထုတ်လွှင့်နိုင်ရန် {{action_image}} ခလုတ်အား ကလစ်နှိပ်ပါ။",
+    "description": "Call to action of success.html."
+  }
+}

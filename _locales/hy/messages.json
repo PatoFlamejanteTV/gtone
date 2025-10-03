@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Հեռարձակեք ցանկացած URL լսելիության սահմաններում գտնվող համակարգիչներին:",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Հեռարձակել այս URL-ը",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL {{username}} օգտվողից:",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Սեղմեք՝ {{domain}} տիրույթից «{{title}}» էջը բացելու համար",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Սեղմեք՝ Tone-ը փորձելու համար:",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone-ը չի կարողանում ինքն իրեն լսել",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Ստուգեք ձայնի ուժգնությունը և փորձեք կրկին:\nՍեղմեք՝ լրացուցիչ տեղեկություններ ստանալու համար:",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL-ը չուղարկվեց",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Դուք կարծես թե անցանց եք:\nՍեղմեք՝ լրացուցիչ տեղեկություններ ստանալու համար:",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Անջատել Tone-ը",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Միացնել Tone-ը",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone-ը չի կարողանում լսել դա:",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Նախքան կրկին փորձելը՝",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Բարձրացրեք ձայնի ուժգնությունը:",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Անջատեք ականջակալները:",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Հայտնել վրիպակի մասին",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Ցավոք չստացվեց:",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Համոզվեք, որ ձեր համակարգիչն առցանց է:",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Փորձեք Google Tone-ը հիմա:",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Սեղմեք {{action_image}} կոճակը՝ URL-ը լսելիության սահմաններում գտնվող համակարգիչներին հեռարձակելու համար:",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Հրավիրեք ուրիշներին Google Tone օգտագործելու. {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Կարգավորումներ",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "Միացված",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "Անջատված",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone-ը միացված է",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone-ն անջատված է",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Դուք կարող եք ուղարկել և ստանալ URL-ներ:",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Դուք չեք կարող ուղարկել և ստանալ URL-ներ:",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone-ն աշխատեց:",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Անցեք հաջորդ էջ և սեղմեք {{action_image}} կոճակը՝ այն հեռարձակելու համար:",
+    "description": "Call to action of success.html."
+  }
+}

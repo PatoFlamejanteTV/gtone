@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Tonalité Google",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Diffusez des URL sur des ordinateurs à portée.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Diffuser cette URL",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL envoyée par {{username}}",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Cliquez pour ouvrir la tonalité \"{{title}}\" issue du domaine \"{{domain}}\".",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Cliquez ici pour essayer Tonalité Google.",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Son émis par Tonalité Google non détecté",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Veuillez vérifier le volume, puis réessayer.\nCliquez ici pour en savoir plus.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL non envoyée",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Il semble que vous ne soyez pas connecté.\nCliquez ici pour en savoir plus.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Désactiver Tonalité Google",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Activer Tonalité Google",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Aucun son détecté par Tonalité Google",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Avant de réessayer, procédez comme suit :",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Augmentez le volume.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Débranchez votre casque.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Signaler un bug",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Malheureusement, cette opération n'a pas fonctionné",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Assurez-vous que votre ordinateur est en ligne.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Essayez Tonalité Google !",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Appuyez sur le bouton {{action_image}} pour diffuser une URL sur les ordinateurs à proximité.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Invitez d'autres personnes à utiliser Tonalité Google : {{shortlink}}.",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Paramètres",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ACTIVÉE",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "DÉSACTIVÉE",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Tonalité Google est activée",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Tonalité Google est désactivée",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Vous pouvez envoyer et recevoir des URL.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Vous ne pouvez pas envoyer ni recevoir d'URL.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Tonalité Google a fonctionné",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Accédez à une autre page, puis cliquez sur le bouton {{action_image}} pour diffuser son URL.",
+    "description": "Call to action of success.html."
+  }
+}

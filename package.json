@@ -1,0 +1,11 @@
+{
+  "name": "google-tone",
+  "version": "2.0.0",
+  "description": "Broadcast any URL to computers within earshot.",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify js/main.js | derequire > build/all.js",
+    "watch": "watchify js/main.js -v -d -o 'derequire > build/all.js'"
+  },
+  "author": "Boris Smus <smus@google.com>"
+}

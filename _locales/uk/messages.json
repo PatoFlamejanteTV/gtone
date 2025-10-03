@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Передавайте URL-адреси на комп’ютери поблизу.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Передати цю URL-адресу",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL-адреса від користувача {{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Натисніть, щоб відкрити сторінку {{title}} в домені {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Натисніть, щоб спробувати Tone!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone не розпізнає власний сигнал",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Перевірте гучність і повторіть спробу.\nНатисніть тут, щоб дізнатися більше.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL-адресу не надіслано",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Схоже, ваш комп’ютер не з’єднано з Інтернетом.\nНатисніть тут, щоб дізнатися більше.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Вимкнути Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Увімкнути Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone не розпізнає цей сигнал.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Перш ніж повторити спробу, виконайте вказані нижче дії.",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Увімкніть звук.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Вийміть навушники.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Повідомити про помилку",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "На жаль, це не допомогло.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Переконайтеся, що комп’ютер з’єднано з Інтернетом.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Спробуйте Google Tone!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Натисніть кнопку {{action_image}}, щоб передати URL-адресу на комп’ютери поблизу.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Запропонуйте Google Tone друзям: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Налаштування",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "УВІМКНЕНО",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "ВИМКНЕНО",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone увімкнено",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone вимкнено",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Ви можете надсилати й отримувати URL-адреси.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Ви не можете надсилати або отримувати URL-адреси.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone працює!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Перейдіть на іншу сторінку та натисніть кнопку {{action_image}}, щоб передати її.",
+    "description": "Call to action of success.html."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "ອອກອາກາດ URL ໃດ​ໜຶ່ງ​ໃສ່​ຄອມ​ພິວ​ເຕີ​ພາຍ​ໃນ​ໄລ​ຍະ​ໃກ້​ຫູ.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "ອອກອາກາດ URL ນີ້",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL ຈາກ {{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "ຄ​ລິກ​ເພື່ອ​ເປີດ '{{title}}' ຈາກ {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "ຄ​ລິກ​ເພື່ອ​ລອງ​ໂທນ​ສຽງ!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "ໂທນ​ສຽງ​ບໍ່​ສາ​ມາດ​ໄດ້​ຍິນ​ມັນ​ເອງ",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "ຄ​ລິກ​ລະ​ດັບ​ສຽງ​ຂອງ​ທ່ານ ແລະ​ລອງ​ໃໝ່​ອີກ.\nຄ​ລິກ​ເພື່ອ​ເບິ່ງ​ຂໍ້​ມູນ​ເພີ່ມ​ເຕີມ.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL ບໍ່​ໄດ້​ສົ່ງ​ໄປ",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "ເບິ່ງ​ຄື​ວ່າ​ທ່ານ​ອັອຟ​ລາຍ​​ຢູ່.\nຄ​ລິກ​ເພື່ອ​ເບິ່ງ​ຂໍ້​ມູນ​ເພີ່ມ​ເຕີມ.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "ປິດ​ໃຊ້​ງານ​ໂທນ​ສຽງ",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "ເປີດ​ໃຊ້​ງານ​ໂທນ​ສຽງ",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone ບໍ່​ສາ​ມາດ​ໄດ້​ຍິນ​ອັນ​ນັ້ນ.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "ກ່ອນ​ທ່ານ​ຈະ​ລອງ​ໃໝ່​ອີກ:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "ເພີ່ມ​ລະ​ດັບ​ສຽງ​ຂອງ​ທ່ານ​ຂຶ້ນ.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "ຖອດ​ຫູ​ຟັງ​ຂອງ​ທ່ານ​ອອກ.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "ລາຍ​ງານ​ບັນ​ຫາ",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "ແຕ່​ໜ້າ​ເສຍ​ດາຍ, ອັນ​ນັ້ນ​ບໍ່​ເຮັດ​ວຽກ.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "ເບິ່​ງ​ໃຫ້​ແນ່​ໃຈ​ວ່າ ຄອມ​ພິວ​ເຕີ​ຂອງ​ທ່ານ​ອອນ​ລາຍ​​ແລ້ວ.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "ລອງ Google Tone ດຽວ​ນີ້!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "ກົດ​ປຸ່ມ {{action_image}} ເພື່ອອອກອາກາດ URL ອັນ​ໜຶ່ງ​ໃສ່​ຄອມ​ພິວ​ເຕີ​ພາຍ​ໃນ​ໄລ​ຍະ​ໃກ້​ຫູ.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "ເຊີນ​ຄົນ​ອື່ນ​ໃຊ້ Google Tone: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "ການຕັ້ງຄ່າ",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ເປີດ",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "ປິດ",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone ເປີດ​ຢູ່",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone ປິດ​ຢູ່",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "ທ່ານ​ສາ​ມາດ​ສົ່ງ ແລະ​ຮັບ URL ໄດ້.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "ທ່ານ​ບໍ່​ສາ​ມາດ​ສົ່ງ ແລະ​ຮັບ URL ໄດ້.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone ເຮັດ​ວຽກ​ແລ້ວ!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "ນຳ​ທາງ​ໄປ​ຫາ​ໜ້າ​ອື່ນ ແລະ​ຄ​ລິກປຸ່ມ {{action_image}} ເພື່ອອອກອາກາດ​ມັນ.",
+    "description": "Call to action of success.html."
+  }
+}

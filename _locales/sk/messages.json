@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Vysielanie webovej adresy do počítačov, ktoré sa nachádzajú vo zvukovom dosahu.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Vysielať túto webovú adresu",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "Webová adresa od používateľa {{username}}",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Kliknutím otvoríte správu {{title}} z domény {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Kliknutím vyskúšajte rozšírenie Tone!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Rozšírenie Tone sa nepočuje",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Skontrolujte hlasitosť a skúste to znova.\nKliknutím získate ďalšie informácie.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "Webová adresa nebola odoslaná",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Zdá sa, že ste offline.\nKliknutím získate ďalšie informácie.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Zakázať rozšírenie Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Povoliť rozšírenie Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Rozšírenie Tone to nepočulo",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Skôr ako to skúsite znova, vykonajte nasledovné:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "zvýšte hlasitosť,",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "odpojte slúchadlá.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Nahlásiť chybu",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Akcia nefungovala",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Skontrolujte, či je váš počítač online.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Vyskúšajte rozšírenie Google Tone!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Stlačením tlačidla {{action_image}} spustite vysielanie webovej adresy do počítačov, ktoré sa nachádzajú vo zvukovom dosahu.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Pozvite ostatných, aby používali rozšírenie Google Tone: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Nastavenia",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ZAP.",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "VYP.",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Rozšírenie Google Tone je zapnuté",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Rozšírenie Google Tone je vypnuté",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Môžete odosielať aj prijímať webové adresy",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Webové adresy nemôžete odosielať ani prijímať",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Rozšírenie Google Tone fungovalo!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Prejdite na inú stránku a kliknutím na tlačidlo {{action_image}} spustite jej vysielanie.",
+    "description": "Call to action of success.html."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "向聽力所及範圍內的電腦播送任何網址。",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "播送這個網址",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "您收到了來自 {{username}} 的網址！",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "點選即可開啟來自 {{domain}} 的「{{title}}」",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "點選即可試用 Tone！",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone 聽不到自己的聲音",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "請檢查音量，然後再試一次。\n按一下即可瞭解詳情。",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "網址未送出",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "您目前為離線狀態。\n按一下即可瞭解詳情。",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "停用 Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "啟用 Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone 聽不到聲音。",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "在您重試之前：",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "提高音量。",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "拔除耳機。",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "回報錯誤",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "很抱歉，這項功能無法運作。",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "確認您的電腦已連上網路。",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "立即試用 Google Tone！",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "按下 {{action_image}} 按鈕即可向聽力範圍內的電腦播送網址。",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "邀請其他人使用 Google Tone：{{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "設定",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "開啟",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "關閉",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone 已開啟",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone 已關閉",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "您可以收發網址。",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "您無法收發網址。",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone 已開始運作！",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "前往另一個頁面，按一下 {{action_image}} 按鈕即可開始播送。",
+    "description": "Call to action of success.html."
+  }
+}

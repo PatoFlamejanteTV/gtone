@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "„Google“ tonas",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Transliuokite bet kokį URL į netoliese esančius kompiuterius.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Transliuoti šį URL",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL iš {{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Spustelėkite, kad {{domain}} atidarytumėte „{{title}}“ ",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Spustelėkite ir išbandykite Toną!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tonui nepavyko išgirsti garso",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Patikrinkite garsumą ir bandykite dar kartą.\nSpustelėkite, jei reikia daugiau informacijos.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL neišsiųstas",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Panašu, kad esate neprisijungę.\nSpustelėkite, jei reikia daugiau informacijos.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Išjungti Toną",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Įgalinti Toną",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "„Google“ tonas neišgirdo šio garso.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Prieš bandydami dar kartą, atlikite toliau nurodytus veiksmus.",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Padidinkite garsumą.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Ištraukite ausinių kištuką iš lizdo.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Pateikti ataskaitą apie riktą",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Deja, nepavyko.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Įsitikinkite, kad kompiuteris prijungtas prie interneto.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Išbandykite „Google“ toną dabar!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Spustelėkite mygtuką {{action_image}} ir transliuokite URL į netoliese esančius kompiuterius.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Pakvieskite kitus naudoti „Google“ toną: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Nustatymai",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ĮJUNGTA",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "IŠJUNGTA",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "„Google“ tonas įjungtas",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "„Google“ tonas išjungtas",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Galite siųsti ir gauti URL.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Negalite siųsti ir gauti URL.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "„Google“ tonas suveikė!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Eikite į kitą puslapį ir spustelėkite mygtuką {{action_image}}, kad transliuotumėte tą puslapį.",
+    "description": "Call to action of success.html."
+  }
+}

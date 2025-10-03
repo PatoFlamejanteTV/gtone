@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "نشانی‌های اینترنتی را در رایانه‌های در محدوده گوش‌رس پخش کنید.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "پخش این نشانی اینترنتی",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "نشانی اینترنتی از {{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "برای باز کردن «{{title}}» از {{domain}} کلیک کنید",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "برای امتحان Tone، کلیک کنید.",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone صدای خودش را نشنید",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "میزان صدا را بررسی کنید و دوباره امتحان کنید.\nبرای اطلاعات بیشتر، کلیک کنید.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "نشانی اینترنتی ارسال نشد",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "به نظر می‌رسد آفلاین هستید.\nبرای اطلاعات بیشتر، کلیک کنید.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "غیرفعال کردن Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "فعال کردن Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone صدا را نشنید.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "قبل از اینکه دوباره امتحان کنید:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "میزان صدا را بالا ببرید.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "هدفونتان را جدا کنید.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "گزارش اشکال",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "متأسفانه، کار نکرد.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "مطمئن شوید رایانه‌تان آنلاین است.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "اکنون Google Tone را امتحان کنید!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "برای پخش یک نشانی اینترنتی در رایانه‌های در محدوده گوش‌رس، دکمه {{action_image}} را فشار دهید.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "دعوت از دیگران برای استفاده از Google Tone: ‏{{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "تنظیمات",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "روشن",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "خاموش",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone روشن است",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone خاموش است",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "می‌توانید نشانی‌های اینترنتی را ارسال و دریافت کنید.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "نمی‌توانید نشانی‌های اینترنتی را ارسال یا دریافت کنید.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone کار کرد!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "برای پخش آن، به صفحه دیگری بروید و روی دکمه {{action_image}} کلیک کنید.",
+    "description": "Call to action of success.html."
+  }
+}

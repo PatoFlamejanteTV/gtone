@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Transmite calquera URL a ordenadores que se encontren a un distancia perceptible.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Transmitir este URL",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL de {{username}}.",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Fai clic para abrir \"{{title}}\" desde {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Fai clic para probar Tone.",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone non puido escoitarse",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Comproba o volume e téntao de novo.\nFai clic para obter máis información.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "Non se enviou o URL",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Parece que estás sen conexión.\nFai clic para obter máis información.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Desactivar Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Activar Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone non puido escoitar iso.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Antes de que o tentes outra vez:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Sube o volume.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Desconecta os auriculares.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Informar dun erro",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Desafortunadamente, non funcionou.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Asegúrate de que o teu ordenador está online.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Proba Google Tone agora!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Preme o botón {{action_image}} para transmitir un URL aos ordenadores que se encontren a un distancia perceptible.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Invita outras persoas a usar Google Tone: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Configuración",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ACTIVADO",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "DESACTIVADO",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone está activado",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone está desactivado",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Podes enviar e recibir URL.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Non podes enviar nin recibir URL.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone funcionou!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Accede a outra páxina e fai clic no botón {{action_image}} para transmitilo.",
+    "description": "Call to action of success.html."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Truyền URL bất kỳ đến các máy tính trong tầm nghe.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Truyền URL này",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL từ {{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Nhấp để mở '{{title}}' từ {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Nhấp để thử Tone!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone không thể tự nghe được âm thanh",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Kiểm tra âm lượng của bạn rồi thử lại.\nNhấp để biết thêm thông tin.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "Không gửi được URL",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Có vẻ như bạn đang ngoại tuyến.\nNhấp để biết thêm thông tin.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Tắt Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Bật Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone không thể nghe được âm thanh đó.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Trước khi bạn thử lại:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Tăng âm lượng của bạn.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Rút tai nghe của bạn ra.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Báo cáo lỗi",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Rất tiếc, mạng không hoạt động.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Đảm bảo máy tính của bạn đã được kết nối với mạng.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Hãy thử Google Tone ngay bây giờ!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Nhấn nút {{action_image}} để truyền URL đến các máy tính trong tầm nghe.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Mời những người khác sử dụng Google Tone: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Cài đặt",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "BẬT",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "TẮT",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone đang bật",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone bị tắt",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Bạn có thể gửi và nhận URL.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Bạn không thể gửi hoặc nhận URL.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone đã hoạt động!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Chuyển tới trang khác và nhấp vào nút {{action_image}} để truyền trang.",
+    "description": "Call to action of success.html."
+  }
+}

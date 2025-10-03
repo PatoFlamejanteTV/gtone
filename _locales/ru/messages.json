@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Тон",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Передача URL на компьютеры, находящиеся в пределах слышимости",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Передать URL",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "{{username}} передает вам URL",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Нажмите здесь, чтобы открыть страницу \"{{title}}\" с сайта {{domain}}.",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Нажмите здесь, чтобы начать.",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Не удалось уловить собственный сигнал",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Проверьте уровень громкости и повторите попытку.\nНажмите здесь, чтобы узнать подробности.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "Не удалось отправить URL",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Отсутствует подключение к Интернету.\nНажмите здесь, чтобы узнать подробности.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Отключить Google Тон",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Включить Google Тон",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Не удалось уловить сигнал",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Попробуйте сделать следующее:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Прибавьте громкость.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Отключите наушники.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Сообщить об ошибке",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Ошибка",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Убедитесь, что компьютер подключен к Интернету.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Оцените Google Тон в действии!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Нажмите кнопку {{action_image}}, чтобы передать URL на компьютеры, находящиеся в пределах слышимости.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Расскажите друзьям о Google Тоне: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Настройки",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ВКЛ",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "ВЫКЛ",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Тон включен",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Тон отключен",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Вы можете отправлять и получать URL.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Вы не можете отправлять или получать URL.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Тон работает!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Откройте любую страницу и нажмите кнопку {{action_image}}, чтобы передать URL.",
+    "description": "Call to action of success.html."
+  }
+}

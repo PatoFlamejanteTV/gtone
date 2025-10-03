@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google ടോൺ",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "കേൾക്കാവുന്ന ദൂരത്തിലുള്ള കമ്പ്യൂട്ടറുകളിലേക്ക് എല്ലാ URL-ലും പ്രക്ഷേപണം ചെയ്യുക.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "ഈ URL പ്രക്ഷേപണം ചെയ്യുക",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "{{username}} എന്നയാളിൽ നിന്നുള്ള URL!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "{{domain}} എന്നതിൽ നിന്നുള്ള '{{title}}' തുറക്കാൻ ക്ലിക്കുചെയ്യുക",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "ടോൺ പരീക്ഷിക്കുന്നതിന് ക്ലിക്കുചെയ്യൂ!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "ടോൺ സ്വയം കേൾക്കാനായില്ല",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "നിങ്ങളുടെ വോളിയം പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.\nകൂടുതൽ വിവരത്തിന് ക്ലിക്കുചെയ്യുക.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL അയച്ചില്ല",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "നിങ്ങൾ ഓഫ്‌ലൈനിലാണെന്നു തോന്നുന്നു.\nകൂടുതൽ വിവരത്തിന് ക്ലിക്കുചെയ്യുക.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "ടോൺ പ്രവർത്തനരഹിതമാക്കുക",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "ടോൺ പ്രവർത്തനക്ഷമമാക്കുക",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google ടോണിന് അത് കേൾക്കാനായില്ല.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "നിങ്ങൾ വീണ്ടും ശ്രമിക്കുന്നതിന് മുമ്പ്:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "നിങ്ങളുടെ വോളിയം വർദ്ധിപ്പിക്കുക.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "നിങ്ങളുടെ ഹെഡ്‌‌ഫോണുകൾ അൺപ്ലഗുചെയ്യുക.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "ഒരു ബഗ് റിപ്പോര്‍ട്ടുചെയ്യുക",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "നിർഭാഗ്യവശാൽ, അത് പ്രവർത്തിക്കുന്നില്ല.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "നിങ്ങളുടെ കമ്പ്യൂട്ടർ ഓൺലൈനാണെന്ന് ഉറപ്പാക്കുക.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "ഇപ്പോൾ തന്നെ Google ടോൺ പരീക്ഷിക്കൂ!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "കേൾക്കാവുന്ന ദൂരത്തിലുള്ള കമ്പ്യൂട്ടറുകളിലേക്ക് ഒരു URL പ്രക്ഷേപണം ചെയ്യുന്നതിന് {{action_image}} ബട്ടൺ അമർത്തുക.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Google ടോൺ ഉപയോഗിക്കുന്നതിന് മറ്റുള്ളവരെ ക്ഷണിക്കുക: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "ക്രമീകരണം",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ഓൺ ആണ്",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "ഓഫാണ്",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google ടോൺ ഓണാണ്",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google ടോൺ ഓഫാണ്",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "നിങ്ങൾക്ക് URL-കൾ അയയ്‌ക്കാനും സ്വീകരിക്കാനുമാകും.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "നിങ്ങൾക്ക് URL-കൾ അയയ്‌ക്കാനോ സ്വീകരിക്കാനോ സാധിക്കും.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google ടോൺ വിജയിച്ചു!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "അത് പ്രക്ഷേപണം ചെയ്യാൻ, മറ്റൊരു പേജിലേക്ക് നാവിഗേറ്റുചെയ്‌ത് {{action_image}} ക്ലിക്കുചെയ്യുക.",
+    "description": "Call to action of success.html."
+  }
+}

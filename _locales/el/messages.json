@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Μεταδώστε οποιαδήποτε διεύθυνση URL σε υπολογιστές σε απόσταση ακοής.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Μετάδοση αυτής της διεύθυνσης URL",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "Διεύθυνση URL από το χρήστη {{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Κάντε κλικ για να ανοίξετε \"{{title}}\" από {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Κάντε κλικ για να δοκιμάσετε το Tone!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Το Tone δεν κατάφερε να ακούσει τον εαυτό του",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Ελέγξτε την ένταση του ήχου σας και δοκιμάστε ξανά.\nΚάντε κλικ για περισσότερες πληροφορίες.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "Η διεύθυνση URL δεν εστάλη",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Φαίνεται ότι είστε εκτός σύνδεσης.\nΚάντε κλικ για περισσότερες πληροφορίες.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Απενεργοποίηση Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Ενεργοποίηση Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Αυτός ο ήχος δεν έγινε αντιληπτός από το Google Tone.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Πριν δοκιμάσετε ξανά:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Αυξήστε την ένταση ήχου.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Αποσυνδέστε τα ακουστικά σας.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Αναφορά σφάλματος",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Δυστυχώς, αυτό δεν λειτούργησε.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Βεβαιωθείτε ότι ο υπολογιστής σας είναι συνδεδεμένος.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Δοκιμάστε το Google Tone τώρα!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Πιέστε το κουμπί {{action_image}} για να μεταδώσετε μια διεύθυνση URL σε υπολογιστές σε απόσταση ακοής.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Προσκαλέστε άλλους χρήστες να χρησιμοποιήσουν το Google Tone: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Ρυθμίσεις",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ΕΝΕΡΓΟΠΟΙΗΜΕΝΟ",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "ΑΠΕΝΕΡΓΟΠΟΙΗΜΕΝΟ",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Το Google Tone είναι ενεργό",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Το Google Tone είναι ανενεργό",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Μπορείτε να στείλετε και να λάβετε διευθύνσεις URL.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Δεν μπορείτε να στείλετε ή να λάβετε διευθύνσεις URL.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Το Google Tone λειτούργησε!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Μεταβείτε σε μια άλλη σελίδα και κάντε κλικ στο κουμπί {{action_image}} για να τη μεταδώσετε.",
+    "description": "Call to action of success.html."
+  }
+}

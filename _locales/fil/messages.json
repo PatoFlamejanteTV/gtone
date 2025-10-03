@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Mag-broadcast ng anumang URL sa mga computer na kayang makarinig.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "I-broadcast ang URL na ito",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL mula kay {{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "I-click upang buksan ang '{{title}}' mula sa {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "I-click upang subukan ang Tone!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Hindi marinig ng Tone ang sarili nito",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Suriin ang iyong volume at subukang muli.\nI-click para sa higit pang impormasyon.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "Hindi naipadala ang URL",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Mukhang naka-offline ka.\nI-click para sa higit pang impormasyon.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "I-disable ang Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "I-enable ang Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Hindi iyon marinig ng Google Tone.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Bago ka muling sumubok:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Lakasan ang iyong volume.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "I-unplug ang iyong headphones.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Mag-ulat ng bug",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Sa kasamaang-palad, hindi iyon gumana.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Tiyaking naka-online ang iyong computer.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Subukan ang Google Tone ngayon!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Pindutin ang button na {{action_image}} upang mag-broadcast ng URL sa mga computer na kayang makarinig.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Imbitahan ang iba na gamitin ang Google Tone: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Mga Setting",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "NAKA-ON",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "NAKA-OFF",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Naka-on ang Google Tone",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Naka-off ang Google Tone",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Maaari kang magpadala at makatanggap ng mga URL.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Hindi ka maaaring magpadala o makatanggap ng mga URL.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Gumana ang Google Tone!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Mag-navigate sa isa pang page at i-click ang button na {{action_image}} upang i-broadcast ito.",
+    "description": "Call to action of success.html."
+  }
+}

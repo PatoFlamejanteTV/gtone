@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "ஒலி எழுப்பினால் கேட்கக்கூடிய தூரத்தில் உள்ள கணினிகளுக்கு எந்த URLஐயும் வலைபரப்பும்.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "URLஐ வலைபரப்பவும்",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "{{username}} இடமிருந்து URL!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "{{domain}} அனுப்பிய '{{title}}'ஐத் திறக்க, கிளிக் செய்யவும்",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Toneஐ முயற்சிக்க, கிளிக் செய்யவும்!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone ஆல் தனது ஒலியைக் கேட்க முடியவில்லை",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "ஒலியளவைச் சரிபார்த்து, மீண்டும் முயற்சிக்கவும்.\nமேலும் தகவலுக்கு, கிளிக் செய்யவும்.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL அனுப்பப்படவில்லை",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "ஆஃப்லைனில் இருக்கிறீர்கள்.\nமேலும் தகவலுக்கு, கிளிக் செய்யவும்.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Toneஐ முடக்கு",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Toneஐ இயக்கு",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone ஆல் ஒலியைக் கேட்க முடியவில்லை.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "மீண்டும் முயற்சிக்கும் முன்பு:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "ஒலியளவை அதிகரிக்கவும்.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "ஹெட்ஃபோன்களை அகற்றவும்.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "பிழையைப் புகாரளி",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "அது வேலை செய்யவில்லை.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "கணினி ஆன்லைனில் உள்ளதை உறுதிசெய்யவும்.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "இப்போது Google Toneஐ முயற்சிக்கவும்!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "ஒலி எழுப்பினால் கேட்கக்கூடிய தூரத்தில் உள்ள கணினிகளுக்கு URLஐ வலைபரப்ப, {{action_image}} பொத்தானை அழுத்தவும்.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Google Toneஐப் பயன்படுத்த, பிறரை அழைக்கவும்: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "அமைப்புகள்",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "இயக்கத்தில்",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "முடக்கத்தில்",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone இயக்கப்பட்டுள்ளது",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone முடக்கப்பட்டுள்ளது",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "URLகளை அனுப்பலாம், பெறலாம்.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "URLகளை அனுப்பவோ, பெறவோ முடியாது.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "அற்புதம், Google Tone வேலை செய்கிறது!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "வேறொரு பக்கத்துக்குச் சென்று, {{action_image}} பொத்தானை கிளிக் செய்வதன் மூலம் அதை வலைபரப்பவும்.",
+    "description": "Call to action of success.html."
+  }
+}

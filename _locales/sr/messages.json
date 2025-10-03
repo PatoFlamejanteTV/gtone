@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google тон",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Емитује било који URL рачунарима у домету чујности.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Емитуј овај URL",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "{{username}} шаље URL!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Кликните да бисте отворили „{{title}}“ са {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Кликните да бисте испробали Тон!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Тон не чује сам себе",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Проверите јачину звука и покушајте поново.\nКликните да бисте видели још информација.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL није послат",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Изгледа да сте офлајн.\nКликните да бисте видели још информација.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Онемогући Тон",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Омогући Тон",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google тон не чује то.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Пре него што поново покушате:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Појачајте звук.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Извуците слушалице.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Пријавите грешку",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Нажалост, то није помогло.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Проверите да ли је рачунар онлајн.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Испробајте Google тон одмах!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Притисните дугме {{action_image}} да бисте емитовали URL рачунарима у домету чујности.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Позовите друге да користе Google тон: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Подешавања",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "УКЉУЧЕНО",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "ИСКЉУЧЕНО",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google тон је укључен",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google тон је искључен",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Можете да шаљете и примате URL-ове.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Не можете да шаљете и примате URL-ове.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google тон функционише!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Посетите другу страницу и кликните на дугме {{action_image}} да бисте је емитовали.",
+    "description": "Call to action of success.html."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "תוכלו לשדר כל כתובת אתר למחשבים בטווח שמיעה.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "שידור כתובת האתר הזו",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "כתובת אתר מ-{{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "לחצו כדי לפתוח את '{{title}}' מ-{{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "לחצו כדי לנסות את Google Tone!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Google Tone לא הצליח לשמוע את הצליל שלו",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "בדקו את עוצמת הקול ונסו שוב.\nלחצו לקבלת מידע נוסף.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "כתובת האתר לא נשלחה",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "נראה שאינכם מחוברים לרשת.\nלחצו לקבלת מידע נוסף.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "השבתת Google Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "הפעלת Google Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone לא הצליח לשמוע זאת.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "לפני שתנסו שוב, תוכלו:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "להגביר את עוצמת הקול.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "לנתק את האוזניות.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "דיווח באג",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "לצערנו, זה לא עבד.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "ודאו שהמחשב במצב מקוון.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "נסו את Google Tone עכשיו!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "תוכלו ללחוץ על הלחצן {{action_image}} כדי לשדר כתובת אתר למחשבים בטווח שמיעה.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "תוכלו להזמין אנשים להשתמש ב-Google Tone:‏ {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "הגדרות",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "מופעל",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "כבוי",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone מופעל",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone כבוי",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "ניתן לשלוח ולקבל כתובות אתרים.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "לא ניתן לשלוח ולקבל כתובות אתרים.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone עבד!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "תוכלו לנווט לדף אחר וללחוץ על הלחצן {{action_image}} כדי לשדר אותו.",
+    "description": "Call to action of success.html."
+  }
+}

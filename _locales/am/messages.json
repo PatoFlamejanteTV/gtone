@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "ያለጆሮ ማዳመጫ ባለ ክልል ውስጥ ማናቸውንም ዩአርኤልን ወደ ኮምፒውተሮች ያሰራጩ።",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "ይህን ዩአርኤል አሰራጭ",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "ዩአርኤል ከ{{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "«{{title}}»ን ከ{{domain}} ለመክፈት ጠቅ ያድርጉ ",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Toneን ለመሞከር ጠቅ ያድርጉ!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone ራሱን ማዳመጥ አይችልም",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "የእርስዎን የድምጽ መጠን ይፈትሹ እና እንደገና ይሞክሩ።\nለተጨማሪ መረጃ ጠቅ ያድርጉ።",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "ዩአርኤል አልተላከም",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "ከመስመር ውጭ ያሉ ይመስላሉ።\nለተጨማሪ መረጃ ጠቅ ያድርጉ።",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Toneን አሰናክል",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Toneን አንቃ",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone ያንን መስማት አልቻለም።",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "እንደገና ከመሞከርዎ በፊት፦",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "የእርስዎን ድምጽ መጠን ይጨምሩ።",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "የጆሮ ማዳመጫዎችዎን ይንቀሉ።",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "ስህተት ሪፖርት አድርግ",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "መጥፎ ዕድል ሆኖ፣ ያ አልሰራም።",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "የእርስዎ ኮምፒውተር መስመር ላይ እንደሆነ ያረጋግጡ።",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "አሁኑኑ Google Toneን ይሞክሩ!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "ያለጆሮ ማዳመጫ ባለ ክልል ውስጥ ዩአርኤልን ወደ ኮምፒውተር ለማሰራጨት {{action_image}} አዝራርን ይጫኑ።",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "ሌሎች Google Toneን እንዲጠቀሙ ይጋብዙ፦ {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "ቅንብሮች",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "በርቷል",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "ጠፍቷል",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone በርቷል",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone ጠፍቷል",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "ዩአርኤሎችን መላክ እና መቀበል ይችላሉ።",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "ዩአርኤሎችን መላክ እና መቀበል አይችሉም።",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone ሰርቷል!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "ወደ ሌላ ገጽ አሰሳ ያድርጉ እና ለማሰራጨት {{action_image}} አዝራርን ጠቅ ያድርጉ።",
+    "description": "Call to action of success.html."
+  }
+}

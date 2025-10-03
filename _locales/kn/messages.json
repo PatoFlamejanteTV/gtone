@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google ಟೋನ್",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "ಶ್ರವಣದೂರದಲ್ಲಿ ಕಂಪ್ಯೂಟರ್‌ಗಳಿಗೆ ಯಾವುದೇ URL ಪ್ರಸಾರಮಾಡಿ.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "ಈ URL ಪ್ರಸಾರಮಾಡಿ",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "{{username}} ಅವರಿಂದ URL!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "{{domain}} ಡೊಮೇನ್‌ನಿಂದ '{{title}}' ತೆರೆಯಲು ಕ್ಲಿಕ್ ಮಾಡಿ",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "ಟೋನ್ ಪ್ರಯತ್ನಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "ಟೋನ್ ಸ್ವತಃ ಕೇಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "ನಿಮ್ಮ ವಾಲ್ಯೂಮ್‌ ಪರಿಶೀಲಿಸಿ ಹಾಗೂ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.\nಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಕ್ಲಿಕ್ ಮಾಡಿ.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL ಕಳುಹಿಸಲಾಗಲಿಲ್ಲ",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "ನೀವು ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿ ಇರುವಂತೆ ತೋರುತ್ತಿದೆ.\nಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಕ್ಲಿಕ್ ಮಾಡಿ.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "ಟೋನ್ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "ಟೋನ್ ಸಕ್ರಿಯಗೊಳಿಸಿ",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google ಟೋನ್‌‌ಗೆ ಅದನ್ನು ಕೇಳಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "ನೀವು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸುವ ಮೊದಲು:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "ನಿಮ್ಮ ವಾಲ್ಯೂಮ್‌ ಹೆಚ್ಚಿಸಿ.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "ನಿಮ್ಮ ಹೆಡ್‌ಫೋನ್‌ಗಳನ್ನು ಅನ್‌ಪ್ಲಗ್‌ ಮಾಡಿ.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "ಬಗ್ ವರದಿ ಮಾಡಿ",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "ದುರದೃಷ್ಟವಶಾತ್, ಅದು ಕಾರ್ಯನಿರ್ವಹಿಸಲಿಲ್ಲ.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿದೆಯೇ ಎಂಬುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "ಇದೀಗ Google ಟೋನ್‌ ಪ್ರಯತ್ನಿಸಿ!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "ಶ್ರವಣದೂರದಲ್ಲಿ ಕಂಪ್ಯೂಟರ್‌ಗಳಿಗೆ URL ಪ್ರಸಾರಮಾಡಲು {{action_image}} ಬಟನ್‌ ಒತ್ತಿ.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Google ಟೋನ್‌ ಬಳಸಲು ಇತರರನ್ನು ಆಹ್ವಾನಿಸಿ: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ಆನ್",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "ಆಫ್",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google ಟೋನ್‌ ಆನ್‌ ಆಗಿದೆ",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google ಟೋನ್‌ ಆಫ್‌ ಆಗಿದೆ",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "ನೀವು URL ಗಳನ್ನು ಕಳುಹಿಸಬಹುದು ಮತ್ತು ಸ್ವೀಕರಿಸಬಹುದು.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "ನೀವು URL ಗಳನ್ನು ಕಳುಹಿಸಲು ಮತ್ತು ಸ್ವೀಕರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google ಟೋನ್‌ ಕಾರ್ಯಪ್ರವೃತ್ತವಾಗಿದೆ!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "ಮತ್ತೊಂದು ಪುಟಕ್ಕೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ ಮತ್ತು ಅದನ್ನು ಪ್ರಸಾರ ಮಾಡಲು {{action_image}} ಬಟನ್‌ ಕ್ಲಿಕ್‌ ಮಾಡಿ.",
+    "description": "Call to action of success.html."
+  }
+}

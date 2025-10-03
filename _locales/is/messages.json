@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Útvarpaðu hvaða vefslóð sem er til nálægra tölva.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Útvarpa þessari vefslóð",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "Vefslóð sem {{username}} sendi!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Smelltu til að opna „{{title}}“ frá {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Smelltu til að prófa Tone!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone heyrði ekki í sjálfu sér",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Athugaðu hljóðstyrkinn og reyndu aftur.\nSmelltu til að fá frekari upplýsingar.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "Vefslóð ekki send",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Þú virðist ekki vera með nettengingu.\nSmelltu til að fá frekari upplýsingar.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Slökkva á Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Kveikja á Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone heyrði þetta ekki.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Áður en þú reynir aftur:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Auktu hljóðstyrkinn.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Taktu heyrnartólin úr sambandi.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Tilkynna um villu",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Þetta virkaði því miður ekki.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Gakktu úr skugga um að tölvan þín sé nettengd.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Prófaðu Google Tone núna!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Ýttu á hnappinn {{action_image}} til að útvarpa vefslóð til nálægra tölva.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Bjóddu öðrum að nota Google Tone: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Stillingar",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "KVEIKT",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "SLÖKKT",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Kveikt er á Google Tone",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Slökkt er á Google Tone",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Þú getur sent og tekið á móti vefslóðum.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Þú getur ekki sent eða tekið á móti vefslóðum.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone virkaði!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Farðu á aðra síðu og smelltu á hnappinn {{action_image}} til að útvarpa henni.",
+    "description": "Call to action of success.html."
+  }
+}

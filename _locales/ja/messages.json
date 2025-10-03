@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google トーン",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "音声が届く範囲にあるパソコンに URL を送信します。",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "この URL を送信",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "{{username}} さんから URL が届きました。",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "{{domain}} で「{{title}}」をクリックすると開くことができます",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "クリックして Google トーンをお試しください。",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "音声を認識できませんでした",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "音量を確認してからもう一度お試しください。\nクリックして詳細を確認できます。",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL を送信できませんでした",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "オフラインになっているようです。\nクリックして詳細を確認できます。",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Google トーンを無効にする",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Google トーンを有効にする",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "音声を認識できませんでした。",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "もう一度試す前に以下を行ってください。",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "音量を上げます。",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "ヘッドフォンのプラグを抜きます。",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "バグを報告",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "動作しませんでした。",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "パソコンがインターネットに接続されていることを確認します。",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Google トーンをお試しください",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "[{{action_image}}] ボタンを押して、音声が届く範囲にあるパソコンに URL を送信します。",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "他のユーザーに Google トーンを紹介する: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "設定",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "有効",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "無効",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google トーンは有効です",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google トーンは無効です",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "URL を送受信できます。",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "URL を送受信できません。",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google トーンが正常に動作しました。",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "ページを移動し、[{{action_image}}] ボタンをクリックして送信してください。",
+    "description": "Call to action of success.html."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Transmite orice adresă URL computerelor din imediata apropiere.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Transmite această adresă URL",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "Adresă URL de la {{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Dă clic pentru a deschide „{{title}}” de pe {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Dă clic pentru a încerca Tone!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone nu și-a auzit propriul sunet",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Verifică volumul și încearcă din nou.\nDă clic pentru mai multe informații.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "Adresa URL nu a fost trimisă",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Se pare că ești offline.\nDă clic pentru mai multe informații.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Dezactivează Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Activează Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone nu a auzit sunetul.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Înainte de a încerca din nou:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Dă volumul mai tare.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Deconectează căștile.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Raportează o eroare",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Din păcate, nu a funcționat.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Asigură-te că ai computerul online.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Încearcă Google Tone acum!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Apasă pe butonul {{action_image}} pentru a transmite o adresă URL computerelor aflate în imediata apropiere.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Invită și pe alții să folosească Google Tone: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Setări",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ACTIVATĂ",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "DEZACTIVATĂ",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone este activată",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone este dezactivată",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "Poți să trimiți și să primești adrese URL.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Nu poți să trimiți sau să primești adrese URL.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone a funcționat!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Navighează la altă pagină și dă clic pe butonul {{action_image}} pentru a o transmite.",
+    "description": "Call to action of success.html."
+  }
+}

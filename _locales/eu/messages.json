@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Igorri edozer URL gertu dituzun ordenagailuetara.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Igorri URL hau",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "{{username}} erabiltzailearen URLa!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Egin klik hemen {{domain}} domeinuko \"{{title}}\" irekitzeko",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Egin klik Tone probatzeko!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone-k ez dio bere buruari entzun",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Egiaztatu bolumena eta saiatu berriro.\nEgin klik informazio gehiago lortzeko.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "Ez da bidali URLa",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "Konexiorik ez duzula dirudi.\nEgin klik informazio gehiago lortzeko.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Desgaitu Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Gaitu Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone-k ez du entzun hori.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Berriro saiatu aurretik:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Igo bolumena.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Deskonektatu aurikularrak.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Eman akats baten berri",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Horrek ez du funtzionatu.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Ziurtatu ordenagailua konektatuta dagoela.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Probatu Google Tone!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Sakatu {{action_image}} botoia gertu dituzun ordenagailuetara URLak igortzeko.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Gonbidatu lagunak Google Tone erabiltzera: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Ezarpenak",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "AKTIBATUTA",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "DESAKTIBATUTA",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone aktibatuta dago",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone desaktibatuta dago",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "URLak bidal eta jaso ditzakezu.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "Ezin duzu URLrik bidali edo jaso.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone-k ongi funtzionatu du!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Joan beste orri batera eta, hura igortzeko, sakatu {{action_image}} botoia.",
+    "description": "Call to action of success.html."
+  }
+}

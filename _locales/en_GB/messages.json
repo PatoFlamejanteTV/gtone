@@ -1,0 +1,126 @@
+{
+  "name": {
+    "message": "Google Tone",
+    "description": "Extension name."
+  },
+  "description": {
+    "message": "Broadcast any URL to computers within earshot.",
+    "description": "Extension description."
+  },
+  "browser_action_title": {
+    "message": "Broadcast this URL",
+    "description": "Browser action title that shows up on hover."
+  },
+  "notification_receive_title_format": {
+    "message": "URL from {{username}}!",
+    "description": "Notification title when you receive a Tone."
+  },
+  "notification_receive_message_format": {
+    "message": "Click to open '{{title}}' from {{domain}}",
+    "description": "Notification message when you receive a Tone."
+  },
+  "notification_receive_test_page_message": {
+    "message": "Click to try Tone!",
+    "description": "Notification message sent from Tone test page."
+  },
+  "notification_send_fail_audio_title": {
+    "message": "Tone couldn't hear itself",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_audio_message": {
+    "message": "Check your volume and try again.\nClick for more info.",
+    "description": "Notification title shown when audio verification fails."
+  },
+  "notification_send_fail_network_title": {
+    "message": "URL not sent",
+    "description": "Notification title shown when a Tone was attempted but the network was offline."
+  },
+  "notification_send_fail_network_message": {
+    "message": "You seem to be offline.\nClick for more info.",
+    "description": "Notification message shown when a Tone was attempted but the network was offline."
+  },
+  "context_menu_disable": {
+    "message": "Disable Tone",
+    "description": "Label of the context menu item that disables Tone."
+  },
+  "context_menu_enable": {
+    "message": "Enable Tone",
+    "description": "Label of the context menu item that enables Tone."
+  },
+  "error_audio_title": {
+    "message": "Google Tone couldn't hear that.",
+    "description": "Title of the error_audio.html page."
+  },
+  "before_trying_again": {
+    "message": "Before you try again:",
+    "description": "Error resolution tip in error pages."
+  },
+  "increase_volume": {
+    "message": "Turn up your volume.",
+    "description": "Audio workaround #1"
+  },
+  "unplug_headphones": {
+    "message": "Unplug your headphones.",
+    "description": "Audio workaround #2"
+  },
+  "report_bug": {
+    "message": "Report a bug",
+    "description": "Report a bug"
+  },
+  "error_network_title": {
+    "message": "Unfortunately, that didn't work.",
+    "description": "Title of error_network.html page."
+  },
+  "ensure_online": {
+    "message": "Make sure that your computer is online.",
+    "description": "Network workaround."
+  },
+  "try_now": {
+    "message": "Try Google Tone now!",
+    "description": "Call to action to try the extension."
+  },
+  "press_button": {
+    "message": "Press the {{action_image}} button to broadcast a URL to computers within earshot.",
+    "description": "Press the button to try it."
+  },
+  "invite_others": {
+    "message": "Invite others to use Google Tone: {{shortlink}}",
+    "description": "Press the button to try it."
+  },
+  "settings_title": {
+    "message": "Settings",
+    "description": "Title of settings.html"
+  },
+  "settings_on": {
+    "message": "ON",
+    "description": "Indicator showing that Tone is enabled."
+  },
+  "settings_off": {
+    "message": "OFF",
+    "description": "Indicator showing that Tone is disabled."
+  },
+  "settings_on_title": {
+    "message": "Google Tone is on",
+    "description": "Title showing that Tone is enabled."
+  },
+  "settings_off_title": {
+    "message": "Google Tone is off",
+    "description": "Title showing that Tone is disabled."
+  },
+  "settings_on_subtitle": {
+    "message": "You can send and receive URLs.",
+    "description": "Subtitle showing that Tone is enabled."
+  },
+  "settings_off_subtitle": {
+    "message": "You can't send or receive URLs.",
+    "description": "Subtitle showing that Tone is disabled."
+  },
+  "success_title": {
+    "message": "Google Tone worked!",
+    "description": "Title of success.html."
+  },
+  "success_call": {
+    "message": "Navigate to another page and click the {{action_image}} button to broadcast it.",
+    "description": "Call to action of success.html."
+  }
+}
