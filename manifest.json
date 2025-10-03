@@ -14,7 +14,7 @@
     "scripting"
   ],
   "background": {
-    "service_worker": "build/all.js"
+    "service_worker": "build/sw-wrapper.js"
   },
   "action": {
     "default_title": "__MSG_browser_action_title__",
@@ -32,13 +32,21 @@
     "512": "images/shoutout_appicon_512.png"
   },
   "web_accessible_resources": [
-    "images/arrow.png",
-    "images/shoutout_actionicon_19.png",
-    "images/shoutout_actionicon_38.png",
-    "images/shoutout_actionicon_disabled_38.png",
-    "images/shoutout_notif_anon_256.png",
-    "images/shoutout_notif_app_256.png",
-    "images/shoutout_notif_alert_256.png"
+    {
+      "resources": [
+        "images/arrow.png",
+        "pages/offscreen.html",
+        "build/sw-legacy-shim.js",
+        "build/all.js",
+        "images/shoutout_actionicon_19.png",
+        "images/shoutout_actionicon_38.png",
+        "images/shoutout_actionicon_disabled_38.png",
+        "images/shoutout_notif_anon_256.png",
+        "images/shoutout_notif_app_256.png",
+        "images/shoutout_notif_alert_256.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
   ],
   "default_locale": "en"
 }

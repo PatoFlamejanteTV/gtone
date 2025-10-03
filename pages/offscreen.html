@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Offscreen background</title>
+</head>
+<body>
+  <script>
+    // Load the main bundle for background behavior. Using an offscreen document
+    // provides a DOM/Audio-capable context for legacy background code.
+    (function() {
+      // Load a small shim first so globals like `google` and `analytics` exist
+      // when the legacy bundle executes.
+      var shim = document.createElement('script');
+      shim.src = 'build/sw-legacy-shim.js';
+      shim.onload = function() {
+        console.log('offscreen: loaded sw-legacy-shim.js');
+        var s = document.createElement('script');
+        s.src = 'build/all.js';
+        s.onload = function() { console.log('offscreen: loaded all.js'); };
+        s.onerror = function(e) { console.error('offscreen: failed to load all.js', e); };
+        document.head.appendChild(s);
+      };
+      shim.onerror = function(e) { console.error('offscreen: failed to load shim', e); };
+      document.head.appendChild(shim);
+    })();
+  </script>
+</body>
+</html>

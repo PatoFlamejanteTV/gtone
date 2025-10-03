@@ -164,24 +164,30 @@ StateMachine.prototype.updateContextMenu_ = function(newState) {
 
   // If it's the ready state, show the disable item.
   if (newState == State.READY) {
-    chrome.contextMenus.create({
-      'title': chrome.i18n.getMessage('context_menu_disable'),
-      'contexts': ['action'],
-      'onclick': function() {
-        chrome.storage.local.set({state: State.DISABLED});
-      }.bind(this)
-    });
+    try {
+      chrome.contextMenus.create({
+        'id': 'ctx_disable',
+        'title': chrome.i18n.getMessage('context_menu_disable'),
+        'contexts': ['action'],
+        'onclick': function() {
+          chrome.storage.local.set({state: State.DISABLED});
+        }.bind(this)
+      });
+    } catch (e) { console.warn('contextMenus.create failed (ready)', e); }
   }
 
   // If it's the disabled state, show the enable item.
   if (newState == State.DISABLED) {
-    chrome.contextMenus.create({
-      'title': chrome.i18n.getMessage('context_menu_enable'),
-      'contexts': ['action'],
-      'onclick': function() {
-        chrome.storage.local.set({state: State.INITIALIZING});
-      }.bind(this)
-    });
+    try {
+      chrome.contextMenus.create({
+        'id': 'ctx_enable',
+        'title': chrome.i18n.getMessage('context_menu_enable'),
+        'contexts': ['action'],
+        'onclick': function() {
+          chrome.storage.local.set({state: State.INITIALIZING});
+        }.bind(this)
+      });
+    } catch (e) { console.warn('contextMenus.create failed (disabled)', e); }
   }
 };
 

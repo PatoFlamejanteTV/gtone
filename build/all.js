@@ -501,8 +501,8 @@ Log.prototype.setupAnalyticsListener = function() {
 
 Log.prototype.onAnalyticsEvent = function(hit) {
   var params = hit.getParameters();
-  var category = params.get(analytics.Parameters.EVENT_CATEGORY);
-  var action = params.get(analytics.Parameters.EVENT_ACTION);
+  var category = (params && typeof params.get === 'function') ? params.get(analytics.Parameters.EVENT_CATEGORY) : (params && params[analytics.Parameters.EVENT_CATEGORY]);
+  var action = (params && typeof params.get === 'function') ? params.get(analytics.Parameters.EVENT_ACTION) : (params && params[analytics.Parameters.EVENT_ACTION]);
   Util.log('Sent to analytics', category, action);
 };
 
@@ -540,7 +540,11 @@ identityManager = new IdentityManager();
 logClient = new LogClient({onlyAnalytics: true});
 
 // Hook up the browser action button.
-chrome.browserAction.onClicked.addListener(onBrowserAction);
+if (chrome.action && chrome.action.onClicked) {
+  chrome.action.onClicked.addListener(onBrowserAction);
+} else if (chrome.browserAction && chrome.browserAction.onClicked) {
+  chrome.browserAction.onClicked.addListener(onBrowserAction);
+}
 
 // At install-time, log whether or not we have an install or an update.
 chrome.runtime.onInstalled.addListener(function(details) {
@@ -1262,7 +1266,11 @@ StateMachine.prototype.updateIcon_ = function(newState) {
     var iconBase = 'images/actions/action_' + iconInfo;
     var small = iconBase.replace('$SIZE', '19');
     var big = iconBase.replace('$SIZE', '38');
-    chrome.browserAction.setIcon({path: {'19': small, '38': big}});
+    if (chrome.action && chrome.action.setIcon) {
+      chrome.action.setIcon({path: {'19': small, '38': big}});
+    } else if (chrome.browserAction && chrome.browserAction.setIcon) {
+      chrome.browserAction.setIcon({path: {'19': small, '38': big}});
+    }
   }
 };
 
@@ -1276,30 +1284,36 @@ StateMachine.prototype.updateContextMenu_ = function(newState) {
 
   // If it's the ready state, show the disable item.
   if (newState == State.READY) {
-    chrome.contextMenus.create({
-      'title': chrome.i18n.getMessage('context_menu_disable'),
-      'contexts': ['browser_action'],
-      'onclick': function() {
-        chrome.storage.local.set({state: State.DISABLED});
-      }.bind(this)
-    });
+    try {
+      chrome.contextMenus.create({
+        'id': 'ctx_disable',
+        'title': chrome.i18n.getMessage('context_menu_disable'),
+        'contexts': ['action'],
+        'onclick': function() {
+          chrome.storage.local.set({state: State.DISABLED});
+        }.bind(this)
+      });
+    } catch (e) { console.warn('contextMenus.create failed (ready)', e); }
   }
 
   // If it's the disabled state, show the enable item.
   if (newState == State.DISABLED) {
-    chrome.contextMenus.create({
-      'title': chrome.i18n.getMessage('context_menu_enable'),
-      'contexts': ['browser_action'],
-      'onclick': function() {
-        chrome.storage.local.set({state: State.INITIALIZING});
-      }.bind(this)
-    });
+    try {
+      chrome.contextMenus.create({
+        'id': 'ctx_enable',
+        'title': chrome.i18n.getMessage('context_menu_enable'),
+        'contexts': ['action'],
+        'onclick': function() {
+          chrome.storage.local.set({state: State.INITIALIZING});
+        }.bind(this)
+      });
+    } catch (e) { console.warn('contextMenus.create failed (disabled)', e); }
   }
 };
 
 StateMachine.prototype.startAnimation_ = function(newState) {
   // Check if the browserAction exists (may be in receive-only mode).
-  if (!chrome.browserAction) {
+  if (!chrome.action && !chrome.browserAction) {
     return;
   }
   var frame = 0;
@@ -1309,7 +1323,11 @@ StateMachine.prototype.startAnimation_ = function(newState) {
     var iconBase = 'images/actions/action_' + iconArray[frame % frameCount];
     var small = iconBase.replace('$SIZE', '19');
     var big = iconBase.replace('$SIZE', '38');
-    chrome.browserAction.setIcon({path: {'19': small, '38': big}});
+    if (chrome.action && chrome.action.setIcon) {
+      chrome.action.setIcon({path: {'19': small, '38': big}});
+    } else if (chrome.browserAction && chrome.browserAction.setIcon) {
+      chrome.browserAction.setIcon({path: {'19': small, '38': big}});
+    }
     frame += 1;
   };
 
