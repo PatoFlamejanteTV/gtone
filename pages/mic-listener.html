@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Acoustic Listener</title>
+  <style>body{font-family:Arial;padding:16px}</style>
+</head>
+<body>
+  <h2>Acoustic Listener</h2>
+  <p>Click "Start listening" and grant microphone permission. When an acoustic
+  message is decoded it will be forwarded to the extension and shown below.</p>
+  <button id="start">Start listening</button>
+  <button id="stop">Stop</button>
+  <pre id="log"></pre>
+
+  <script>
+  (function(){
+    var logEl = document.getElementById('log');
+    function log(s){ logEl.textContent += s + '\n'; }
+
+    var audioCtx = null;
+    var analyser = null;
+    var stream = null;
+    var fftSize = 2048;
+    var FREQ0 = 16000; var FREQ1 = 18000;
+    var PREAMBLE_REPEATS = 6;
+    var symbolMs = 70;
+
+    function byteToBits(b){ var arr=[]; for(var i=0;i<8;i++) arr.push((b>>i)&1); return arr; }
+    function bitsToBytes(bits){ var bytes=[]; for(var i=0;i+7<bits.length;i+=8){ var v=0; for(var j=0;j<8;j++) v |= (bits[i+j]&1)<<j; bytes.push(v);} return bytes; }
+    function base64ToString(b64){ return decodeURIComponent(escape(atob(b64))); }
+
+    var collectedBits = [];
+    var decodeInterval = null;
+
+    function start() {
+      navigator.mediaDevices.getUserMedia({audio:true}).then(function(s){
+        stream = s; audioCtx = new (window.AudioContext||window.webkitAudioContext)(); var src = audioCtx.createMediaStreamSource(s);
+        analyser = audioCtx.createAnalyser(); analyser.fftSize = fftSize; src.connect(analyser);
+        var freqData = new Uint8Array(analyser.frequencyBinCount);
+        var binFreq = audioCtx.sampleRate / analyser.fftSize;
+        var bin0 = Math.round(FREQ0 / binFreq);
+        var bin1 = Math.round(FREQ1 / binFreq);
+
+        decodeInterval = setInterval(function(){
+          try{
+            analyser.getByteFrequencyData(freqData);
+            var v0 = freqData[bin0]||0; var v1 = freqData[bin1]||0; var bit = v1>v0?1:0; collectedBits.push(bit);
+            if (collectedBits.length > 8192) collectedBits.splice(0,collectedBits.length-8192);
+            if (collectedBits.length >= (PREAMBLE_REPEATS*8+16)){
+              var b=collectedBits;
+              for (var shift=0; shift + (PREAMBLE_REPEATS*8 + 16) < b.length; shift++){
+                var ok=true;
+                for (var r=0;r<PREAMBLE_REPEATS;r++){
+                  for (var i=0;i<8;i++){ var expected=(0xAA>>i)&1; if (b[shift + r*8 + i] !== expected){ ok=false; break; } }
+                  if (!ok) break;
+                }
+                if (!ok) continue;
+                var lenBitsStart = shift + PREAMBLE_REPEATS*8; var lenHigh=0; for(var i=0;i<8;i++) lenHigh |= (b[lenBitsStart + i]&1)<<i; var lenLow=0; for(var i=0;i<8;i++) lenLow |= (b[lenBitsStart + 8 + i]&1)<<i; var payloadLen=(lenHigh<<8)|lenLow; var neededBits = PREAMBLE_REPEATS*8 + 16 + payloadLen*8;
+                if (shift + neededBits <= b.length){ var payloadBits = b.slice(lenBitsStart + 16, lenBitsStart + 16 + payloadLen*8); var bytes = bitsToBytes(payloadBits); var chars = String.fromCharCode.apply(null, bytes); try{ var json = base64ToString(chars); var obj = JSON.parse(json); collectedBits = b.slice(shift + neededBits); log('received: ' + JSON.stringify(obj)); chrome.runtime.sendMessage({type:'acoustic_received', data: obj}); break; }catch(e){}
+                }
+              }
+            }
+          }catch(e){}
+        }, symbolMs);
+        log('listening...');
+      }).catch(function(err){ log('getUserMedia failed: '+err); });
+    }
+    function stop(){ if (decodeInterval) clearInterval(decodeInterval); if (stream) stream.getTracks().forEach(function(t){try{t.stop();}catch(e){} }); log('stopped'); }
+
+    document.getElementById('start').addEventListener('click', start);
+    document.getElementById('stop').addEventListener('click', stop);
+  })();
+  </script>
+</body>
+</html>

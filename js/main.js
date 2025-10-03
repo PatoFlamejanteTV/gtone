@@ -49,6 +49,17 @@ getTestGroup(function(testGroup) {
   logClient.setTestGroup(testGroup);
 });
 
+// Accept acoustic modem messages sent from `pages/mic-listener.html`.
+chrome.runtime.onMessage.addListener(function(msg, sender) {
+  if (msg && msg.type == 'acoustic_received' && msg.data) {
+    try {
+      onReceived(msg.data);
+    } catch (e) {
+      console.error('Failed to handle acoustic message', e);
+    }
+  }
+});
+
 function onSent(isVerified) {
   Util.log('onSent', isVerified);
   var url = nearbyManager.getLastUrl();
