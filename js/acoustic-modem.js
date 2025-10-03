@@ -11,8 +11,10 @@
  */
 
 var DEFAULT_SYMBOL_MS = 70;
-var FREQ0 = 16000; // 0 bit frequency (Hz)
-var FREQ1 = 18000; // 1 bit frequency (Hz)
+// Use lower frequencies to be reliably played/recorded on modern devices.
+// Very high ultrasonic tones may be filtered or poorly reproduced by mics/speakers.
+var FREQ0 = 1500; // 0 bit frequency (Hz)
+var FREQ1 = 2200; // 1 bit frequency (Hz)
 var PREAMBLE_REPEATS = 6; // repeated 0xAA pattern
 
 function stringToBase64(str) {
@@ -71,10 +73,18 @@ var Modem = function() {
   this.decodeInterval = null;
   this.sampleRate = 44100;
   this.fftSize = 2048;
+  this.debug = false;
 };
 
 Modem.prototype.ensureAudioCtx = function() {
-  if (!this.audioCtx) this.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (!this.audioCtx) {
+    try {
+      this.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    } catch (e) {
+      // fallback: many browsers require user gesture. Caller must handle.
+      throw e;
+    }
+  }
   return this.audioCtx;
 };
 
@@ -91,8 +101,9 @@ Modem.prototype.transmit = function(obj, opts, cb) {
     var t = startTime;
     // create gain node
     var gain = ctx.createGain();
-    gain.gain.value = 0.25;
+    gain.gain.value = (opts.gain != null ? opts.gain : 0.25);
     gain.connect(ctx.destination);
+    if (this.debug) console.log('Modem.transmit: bits=', bits.length, 'symbolSec=', symbolSec, 'freq0=', FREQ0, 'freq1=', FREQ1);
     // schedule oscillators per bit
     for (var i = 0; i < bits.length; i++) {
       var osc = ctx.createOscillator();
@@ -149,7 +160,7 @@ Modem.prototype._startDecodeLoop = function() {
   var analyser = this.analyser;
   var bufferLen = analyser.frequencyBinCount;
   var freqData = new Uint8Array(bufferLen);
-  var binFreq = ctx.sampleRate / analyser.fftSize; // Hz per bin
+  var binFreq = (ctx.sampleRate || this.sampleRate) / analyser.fftSize; // Hz per bin
   var bin0 = Math.round(FREQ0 / binFreq);
   var bin1 = Math.round(FREQ1 / binFreq);
   var symbolMs = this.symbolMs;
@@ -164,6 +175,7 @@ Modem.prototype._startDecodeLoop = function() {
       analyser.getByteFrequencyData(freqData);
       var v0 = freqData[bin0] || 0;
       var v1 = freqData[bin1] || 0;
+      if (self.debug && (v0 || v1)) console.log('Modem.decode sample v0=',v0,'v1=',v1,'bin0=',bin0,'bin1=',bin1);
       var bit = v1 > v0 ? 1 : 0;
       collectedBits.push(bit);
       // maintain max length buffer

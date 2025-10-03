@@ -13,22 +13,30 @@ function startServer(startPort) {
     try {
       const wss = new WebSocket.Server({ port: p });
 
+      const verbose = !!process.env.SIG_VERBOSE;
+      let clientId = 0;
+
       wss.on('listening', () => {
         console.log('Signaling server listening on port', p);
       });
 
       wss.on('connection', function connection(ws) {
-        console.log('Client connected');
+        const id = ++clientId;
+        ws._id = id;
+        console.log('Client connected id=' + id + ' total=' + wss.clients.size);
         ws.on('message', function incoming(message) {
+          try {
+            if (verbose) console.log('Received from', id, 'bytes=', message && message.length);
+          } catch (e) {}
           // Broadcast to all other clients
           wss.clients.forEach(function each(client) {
             if (client !== ws && client.readyState === WebSocket.OPEN) {
-              client.send(message);
+              try { client.send(message); } catch (e) { if (verbose) console.warn('Failed send to client', client && client._id, e); }
             }
           });
         });
         ws.on('close', function() {
-          console.log('Client disconnected');
+          console.log('Client disconnected id=' + id + ' total=' + wss.clients.size);
         });
       });
 

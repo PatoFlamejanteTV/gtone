@@ -30,6 +30,7 @@ function NearbyManager() {
   this.resubscribeTimer = null;
   this.isLastPublishSuccessful_ = false;
   this.onMessageHandler = this.onMessage_.bind(this);
+  this.debug = false;
 }
 NearbyManager.prototype = new Emitter();
 
@@ -50,21 +51,23 @@ NearbyManager.prototype.subscribe = function() {
     }
     try {
       this.ws = new WebSocket(url);
+      var self = this;
       this.ws.addEventListener('open', function() {
-        Util.log('WebSocket connected to', url);
+        Util.log('WebSocket connected to', url, 'clients=', self.ws && self.ws.readyState ? 'open' : 'closed');
       });
       this.ws.addEventListener('message', function(evt) {
         try {
+          if (self.debug) Util.log('WebSocket received', evt.data && evt.data.length, 'bytes');
           var data = JSON.parse(evt.data);
-          this.onMessageHandler(data);
+          self.onMessageHandler(data);
         } catch (e) {
-          this.emit_('error', NearbyManager.Error.INVALID_JSON);
+          self.emit_('error', NearbyManager.Error.INVALID_JSON);
         }
-      }.bind(this));
+      });
       this.ws.addEventListener('close', function() {
         Util.log('WebSocket closed; will retry in 5s.');
-        setTimeout(this.subscribe.bind(this), 5000);
-      }.bind(this));
+        setTimeout(self.subscribe.bind(self), 5000);
+      });
       this.ws.addEventListener('error', function(e) {
         console.warn('WebSocket error', e);
       });
@@ -111,11 +114,14 @@ NearbyManager.prototype.send = function(tab, userInfo) {
     chrome.scripting.executeScript({
       target: {tabId: tab.id},
       func: function(payloadStr, durationMs) {
-        // Simple waveform emitter: generate tones in sequence encoding bytes
         try {
           var AudioCtx = window.AudioContext || window.webkitAudioContext;
           if (!AudioCtx) throw Error('no AudioCtx');
-          var ctx = new AudioCtx(); if (ctx.state === 'suspended' && ctx.resume) ctx.resume();
+          var ctx = new AudioCtx();
+          // Modern browsers often require a user gesture to start audio; try resume.
+          if (ctx.state === 'suspended' && ctx.resume) {
+            try { ctx.resume(); } catch (e) { /* ignore */ }
+          }
           var gain = ctx.createGain(); gain.gain.value = 0.25; gain.connect(ctx.destination);
 
           // encode payload to base64 and then bytes
@@ -124,7 +130,7 @@ NearbyManager.prototype.send = function(tab, userInfo) {
           var bytes = [];
           for (var i=0;i<b64.length;i++) bytes.push(b64.charCodeAt(i));
 
-          var FREQ0 = 16000; var FREQ1 = 18000; var symbolSec = (durationMs/1000) / 8; // 8 symbols per message chunk
+          var FREQ0 = 1500; var FREQ1 = 2200; var symbolSec = (durationMs/1000) / Math.max(8, bytes.length*8); // adapt symbol rate
           var now = ctx.currentTime + 0.05;
           var t = now;
           // small preamble
@@ -133,18 +139,23 @@ NearbyManager.prototype.send = function(tab, userInfo) {
           // send bytes LSB-first
           bytes.forEach(function(byte){ for (var b=0;b<8;b++){ var bit = (byte>>b)&1; var osc = ctx.createOscillator(); osc.type='sine'; osc.frequency.value = bit?FREQ1:FREQ0; osc.connect(gain); osc.start(t); osc.stop(t+symbolSec*0.9); t += symbolSec; }});
           setTimeout(function(){ try{ gain.disconnect(); }catch(e){} }, (t - ctx.currentTime)*1000 + 50);
-          return true;
+          return {ok:true, bytes: bytes.length};
         } catch (e) { return {err: ''+e}; }
       },
       args: [payload, AUDIBLE_DURATION_MS]
     }, function(results) {
       if (chrome.runtime.lastError) {
         console.warn('Acoustic injection failed', chrome.runtime.lastError.message);
-        // fallback: mark as error
         this.emit_('error', NearbyManager.Error.PUBLISH_FAILED);
         return;
       }
-      // success: treat as sent
+      // results is an array of injection results from the tabs; inspect
+      if (results && results[0] && results[0].result && results[0].result.err) {
+        console.warn('Acoustic injection returned error', results[0].result.err);
+        this.emit_('error', NearbyManager.Error.PUBLISH_FAILED);
+        return;
+      }
+      if (this.debug) console.log('Acoustic injection result', results && results[0] && results[0].result);
       this.isLastPublishSuccessful_ = true;
       this.emit_('sent', this.isLastPublishSuccessful_);
     }.bind(this));
