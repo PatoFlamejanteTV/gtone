@@ -30,7 +30,7 @@ function NearbyManager() {
   this.resubscribeTimer = null;
   this.isLastPublishSuccessful_ = false;
   this.onMessageHandler = this.onMessage_.bind(this);
-  this.debug = false;
+  this.debug = true;
 }
 NearbyManager.prototype = new Emitter();
 

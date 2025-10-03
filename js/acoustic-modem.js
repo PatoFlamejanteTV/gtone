@@ -73,7 +73,7 @@ var Modem = function() {
   this.decodeInterval = null;
   this.sampleRate = 44100;
   this.fftSize = 2048;
-  this.debug = false;
+  this.debug = true;
 };
 
 Modem.prototype.ensureAudioCtx = function() {
