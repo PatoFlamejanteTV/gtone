@@ -28,8 +28,8 @@ identityManager = new IdentityManager();
 // Log client logs details to Google Analytics.
 logClient = new LogClient({onlyAnalytics: true});
 
-// Hook up the browser action button.
-chrome.browserAction.onClicked.addListener(onBrowserAction);
+// Hook up the action button (manifest v3 uses chrome.action).
+chrome.action.onClicked.addListener(onBrowserAction);
 
 // At install-time, log whether or not we have an install or an update.
 chrome.runtime.onInstalled.addListener(function(details) {

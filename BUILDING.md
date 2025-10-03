@@ -40,6 +40,16 @@ By default the server will listen on port 8080. You can set PORT environment var
 - If you started the signaling server, set the Signaling URL to ws://localhost:8080
 - (Optional) Set the Log Server URL to forward logs to your own server.
 
+Important: to receive acoustic messages you must open the listener page and
+grant microphone permission. Open the listener page in a normal tab (not
+chrome://) at:
+
+	chrome-extension://<extension-id>/pages/mic-listener.html
+
+Click "Start listening" and grant microphone permission. Keep this tab open
+while other devices send tones; the page will decode acoustic messages and
+forward them to the extension.
+
 5) Use the extension:
 
 - Use the browser action button to send a "shoutout". If signaling is configured and other clients are connected they will receive it. Otherwise the local loopback will still mark the send as successful.

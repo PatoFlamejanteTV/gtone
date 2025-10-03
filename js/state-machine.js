@@ -135,8 +135,8 @@ StateMachine.prototype.setState_ = function(newState) {
 };
 
 StateMachine.prototype.updateIcon_ = function(newState) {
-  // Check if the browserAction exists (may be in receive-only mode).
-  if (!chrome.browserAction) {
+  // Check if the action exists (may be in receive-only mode).
+  if (!chrome.action) {
     return;
   }
   var iconInfo = IconMap[newState];
@@ -150,7 +150,7 @@ StateMachine.prototype.updateIcon_ = function(newState) {
     var iconBase = 'images/actions/action_' + iconInfo;
     var small = iconBase.replace('$SIZE', '19');
     var big = iconBase.replace('$SIZE', '38');
-    chrome.browserAction.setIcon({path: {'19': small, '38': big}});
+    chrome.action.setIcon({path: {'19': small, '38': big}});
   }
 };
 
@@ -166,7 +166,7 @@ StateMachine.prototype.updateContextMenu_ = function(newState) {
   if (newState == State.READY) {
     chrome.contextMenus.create({
       'title': chrome.i18n.getMessage('context_menu_disable'),
-      'contexts': ['browser_action'],
+      'contexts': ['action'],
       'onclick': function() {
         chrome.storage.local.set({state: State.DISABLED});
       }.bind(this)
@@ -177,7 +177,7 @@ StateMachine.prototype.updateContextMenu_ = function(newState) {
   if (newState == State.DISABLED) {
     chrome.contextMenus.create({
       'title': chrome.i18n.getMessage('context_menu_enable'),
-      'contexts': ['browser_action'],
+      'contexts': ['action'],
       'onclick': function() {
         chrome.storage.local.set({state: State.INITIALIZING});
       }.bind(this)
@@ -186,8 +186,8 @@ StateMachine.prototype.updateContextMenu_ = function(newState) {
 };
 
 StateMachine.prototype.startAnimation_ = function(newState) {
-  // Check if the browserAction exists (may be in receive-only mode).
-  if (!chrome.browserAction) {
+  // Check if the action exists (may be in receive-only mode).
+  if (!chrome.action) {
     return;
   }
   var frame = 0;
@@ -197,7 +197,7 @@ StateMachine.prototype.startAnimation_ = function(newState) {
     var iconBase = 'images/actions/action_' + iconArray[frame % frameCount];
     var small = iconBase.replace('$SIZE', '19');
     var big = iconBase.replace('$SIZE', '38');
-    chrome.browserAction.setIcon({path: {'19': small, '38': big}});
+  chrome.action.setIcon({path: {'19': small, '38': big}});
     frame += 1;
   };
 

@@ -1,22 +1,22 @@
 {
   "name": "__MSG_name__",
   "description": "__MSG_description__",
+  "manifest_version": 3,
   "version": "2.0.7",
   "minimum_chrome_version": "50",
   "permissions": [
     "activeTab",
-    "audioCapture",
     "contextMenus",
     "idle",
     "notifications",
     "storage",
-    "tabs"
+    "tabs",
+    "scripting"
   ],
   "background": {
-    "scripts": ["build/all.js"],
-    "persistent": true
+    "service_worker": "build/all.js"
   },
-  "browser_action": {
+  "action": {
     "default_title": "__MSG_browser_action_title__",
     "default_icon": {
       "19": "images/actions/action_19_ready.png",
@@ -40,6 +40,5 @@
     "images/shoutout_notif_app_256.png",
     "images/shoutout_notif_alert_256.png"
   ],
-  "default_locale": "en",
-  "manifest_version": 2
+  "default_locale": "en"
 }
